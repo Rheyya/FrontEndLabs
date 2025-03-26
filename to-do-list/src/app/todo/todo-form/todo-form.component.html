@@ -1,0 +1,19 @@
+<div class="todo-form">
+    <input [(ngModel)]="newTask" placeholder="New task" />
+    <input type="number" [(ngModel)]="newDuration" placeholder="Duration (min)" />
+
+    <div class="priority-buttons">
+        <button type="button"
+        [class.active]="newPriority === 'HIGH'"
+        (click)="newPriority = 'HIGH'">High</button>
+
+        <button type="butgit ton"
+        [class.activate]="newPriority === 'NORMAL'"
+        (click)="newPriority = 'NORMAL'">Normal</button>
+
+        <button type="button"
+        [class.activate]="newPriority === 'LOW'"
+        (click)="newPriority = 'LOW'">Low</button>
+    </div>
+    <button type="button" (click)="addTodo()">Add</button>
+</div>
